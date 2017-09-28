@@ -1,0 +1,17 @@
+Inscrições
+GDTs
+Assembleia
+Certificados
+
+
+Banco de dados:
+
+- Petiano(nome, email, cpf, pet)
+- Atividade(encaminhamentos):
+    - GDT (título, ordem, presidente, secretário)
+    - Plenária ()
+- Encaminhamento(origem, )
+- Evento (nome, descrição)
+- Inscricao(petiano, evento, gdt)
+- Assembleia()
+- Certificado()
