@@ -1,17 +1,41 @@
-Inscrições
-GDTs
-Assembleia
-Certificados
+___________________________________________
 
+BANCO DE DADOS
+___________________________________________
 
-Banco de dados:
+  APP EVENTO:
+    - Petiano (nome, email, cpf, pet)
+    - Atividade(encaminhamentos):
+        - GDT (divulgado, título, ordem, presidente, secretário, presentes)
+        - Plenária (presentes)
+    - Encaminhamento (origem(gdt ou plenária)),corpo,situacao)
+    - Evento (nome, descrição)
+    - Inscricao (petiano, evento, gdt)
+    - Pauta (Título, encaminhamentos)
+    - Assembleia (regimento,mesa,pautas,evento_atual(encaminhamento))
 
-- Petiano(nome, email, cpf, pet)
-- Atividade(encaminhamentos):
-    - GDT (título, ordem, presidente, secretário)
-    - Plenária ()
-- Encaminhamento(origem, )
-- Evento (nome, descrição)
-- Inscricao(petiano, evento, gdt)
-- Assembleia()
-- Certificado()
+        Testes do evento:
+            - Testar se todas os encaminhamentos estão incluídos nas pautas
+  APP POSTAGENS:
+    - Postagem (Título, corpo, data, autor)
+
+___________________________________________
+
+PÁGINAS + FUNCIONALIDADES
+___________________________________________
+
+  1. Página Inicial:
+      - Sobre o evento + link de inscrição
+      - Postagens Recentes
+  2. Postagens:
+      - Postagens por data + pesquisar
+  3. Entrar
+  4. Cadastre-se
+  5. Cadastre-se em gdt
+  3. Assembleia:
+      - Bem vindos à assembleia
+      - Mesa da Assembleia
+      - Links: Regimento, pauta
+      - Pauta atual
+      - Enviar sugestão de encaminhamento
+      -
