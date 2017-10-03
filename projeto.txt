@@ -12,11 +12,10 @@ ___________________________________________
     - Evento (nome, descrição)
     - Inscricao (petiano, evento, gdt)
     - Pauta (Título, encaminhamentos)
-    - Assembleia (regimento,mesa,pautas,evento_atual(encaminhamento))
+    - Assembleia (regimento,mesa,pautas,pauta_atual(encaminhamento))
 
         Testes do evento:
             - Testar se todas os encaminhamentos estão incluídos nas pautas
-  APP POSTAGENS:
     - Postagem (Título, corpo, data, autor)
 
 ___________________________________________
@@ -38,4 +37,3 @@ ___________________________________________
       - Links: Regimento, pauta
       - Pauta atual
       - Enviar sugestão de encaminhamento
-      -
