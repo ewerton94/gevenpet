@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*- #
 '''Here is the models'''
 from markdownx.models import MarkdownxField
 from django.db import models
@@ -24,11 +25,11 @@ class Documento(models.Model):
     '''Table of files'''
     arquivo = models.FileField(upload_to='uploads/%Y/%m/%d/')
 
-tipos_atividades = (('GDT', 'GDT'), ('Plenária', "Plenária"))
+TIPOS_ATIVIDADES = (('GDT', 'GDT'), ('Plenária', "Plenária"))
 
 class Atividade(models.Model):
     '''Table of Activities'''
-    tipo = models.CharField(max_length=20, choices=tipos_atividades)
+    tipo = models.CharField(max_length=20, choices=TIPOS_ATIVIDADES)
 
 class GDT(Atividade):
     '''Table of GDTs'''
