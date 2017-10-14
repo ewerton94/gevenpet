@@ -3,6 +3,13 @@
 from markdownx.models import MarkdownxField
 from django.db import models
 
+class Sobre(models.Model):
+    """Table of about"""
+    ordem = models.IntegerField()
+    titulo = models.CharField(max_length=100)
+    descricao = MarkdownxField()
+    foto = models.FileField(upload_to='uploads/%Y/%m/%d/')
+
 class Instituicao(models.Model):
     '''Table of Institutions'''
     nome = models.CharField(max_length=200)
